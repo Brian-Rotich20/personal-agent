@@ -34,9 +34,14 @@ type OpenRouterResponse = {
   error?: { message?: string };
 };
 
+export type ConversationMessage = {
+  role: "user" | "assistant";
+  content: string;
+};
+
 export async function runAgent(
   businessId: string,
-  userMessage: string,
+  history: ConversationMessage[],
 ): Promise<string> {
   const messages: AgentMessage[] = [
     {
