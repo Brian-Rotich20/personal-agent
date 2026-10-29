@@ -1,6 +1,6 @@
 
 import { and, desc, eq } from "drizzle-orm";
-import { db, pool } from "../db/client.js";
+import { db } from "../db/client.js";
 import { conversations, messages } from "../db/schema.js";
 import { runAgent, type ConversationMessage } from "./run-agent.js";
 

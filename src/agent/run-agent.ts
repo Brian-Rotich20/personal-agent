@@ -56,7 +56,7 @@ export async function runAgent(
         "Only answer using business information provided to you or returned by tools.",
       ].join(" "),
     },
-    { role: "user", content: userMessage },
+    ...history.map((msg) => ({ role: msg.role, content: msg.content })),
   ];
 
   for (let round = 0; round < MAX_TOOL_ROUNDS; round++) {
