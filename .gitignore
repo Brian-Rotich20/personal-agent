@@ -4,3 +4,5 @@ dist/
 .env.*
 !.env.example
 test-memory.ts
+tests/test-get-services.ts
+tests/test-get-services.ts

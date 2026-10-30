@@ -2,7 +2,7 @@
 import { and, desc, eq } from "drizzle-orm";
 import { db } from "../db/client.js";
 import { conversations, messages } from "../db/schema.js";
-import { runAgent, type ConversationMessage } from "./run-agent.js";
+import { runAgent, type ConversationMessage } from "../agent/run-agent.js";
 
 const HISTORY_LIMIT = 20;
 

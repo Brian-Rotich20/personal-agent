@@ -1,0 +1,1 @@
+// HTTP entry point for the application. This file is responsible for starting the server and handling incoming requests.
